@@ -35,5 +35,5 @@ Docker的一般使用在以下几点：
 15年前，几乎所有的应用的编写，都使用已经被定义好的服务堆栈和部署在一个庞大的专有的服务器上。今天，开发者建立和组合一个应用，必须要为这些应用准备去发布到各种环境下面，像公共环境，本地环境，甚至虚拟机的环境下。
 
 <div style="text-align:center;">
-    <img width="100%" src="">
+    <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/evolution_of_it.jpg">
 </div>
