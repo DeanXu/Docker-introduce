@@ -40,3 +40,22 @@ Docker的一般使用在以下几点：
 <div style="text-align:center;">
     <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/evolution_of_it.jpg?raw=true">
 </div>
+图1：IT的演变
+
+这张图给我们展示了以下几个意思：
+>- 在不同服务器和不同依赖关系，存在不利的交互
+>- 通过不同硬件，迅速部署和发布的挑战性。一个集群的不同的服务器在不同类型的硬件条件下，发布时管理起来看起来是个不可能完成的任务。
+
+<div style="text-align:center;">
+    <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/the_challenge.jpg?raw=true">
+</div>
+图2：多样化堆栈和多样性硬件环境的挑战
+
+或者看一下下面的矩阵图，我们能看到这些组合会是一个巨大的数字，是应用/服务 和 硬件环境的排列组合， 这些都是我们每一次写或者重写一个应用需要去考虑的。这创造了一个非常困难的局面，不管是写程序的开发者还是需要保证操作环境可扩展、安全、高性能的运维人员。
+
+<div style="text-align:center;">
+    <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/matrix.jpg?raw=true">
+</div>
+图3：动态堆栈和动态硬件环境创造了一个N乘N的矩阵
+
+我们怎么来解决这个问题？
