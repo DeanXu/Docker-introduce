@@ -25,7 +25,7 @@ Docker的一般使用在以下几点：
 >- [为什么关注Docker(针对开发者)](#Why-Should-I-Care-1)
 >- [为什么关注Docker(针对运营人员)](#Why-Should-I-Care-2)
 >- [Docker有哪些主要的特性](#What-Main-Features)
->- [Docker最基本的函数有哪些](#asdf)
+>- [Docker最基本的函数有哪些](#What-are-the-Basic-Docker-Functions)
 >- [容器是怎么工作的？(它和虚拟机有什么区别)](#asdf)
 >- [Docker 和 dotCloud的关系是什么？](#asdf)
 >- [使用Docker的一些好方式](#asdf)
@@ -127,4 +127,15 @@ Docker有哪些主要的特性
 >- 文件系统分离：每一个进程容器跑在完全分离的root权限的文件系统下。
 >- 资源分离：系统资源（像CPU、内存）能被指定的分配给每一个进程容器,使用cgroups。
 >- 网络分离：使用一个虚拟的接口和IP地址，每一个进程容器跑在它自己的网络命名空间。
->- 复制或者写入：
+>- copy-on-write：root文件系统用copy-on-write方式进行创建，使得发布显得非常快捷，节省了内存和硬盘
+>- 日志：每一个进程容器的标准数据流（标准输出/标准错误/标准输入）会被收集并且实时或者分配检索记录下来
+>- 改变管理：改变一个容器的文件系统能被提交到一个新的镜像，可以被重用去创造更多的容器。不需要模板或者管理配置的要求。 
+>- 交互性Shell: Docker 会分配一个伪终端，在所有的容器里都可以使用标准的输入，for example to run a throwaway interactive shell.
+
+<a name="What-are-the-Basic-Docker-Functions"></a>
+----------
+Docker最基本的函数有哪些
+---------
+
+
+
