@@ -26,7 +26,7 @@ Docker的一般使用在以下几点：
 >- [为什么关注Docker(针对运营人员)](#Why-Should-I-Care-2)
 >- [Docker有哪些主要的特性](#What-Main-Features)
 >- [Docker最基本的函数有哪些](#What-are-the-Basic-Docker-Functions)
->- [容器是怎么工作的？(它和虚拟机有什么区别)](#asdf)
+>- [容器是怎么工作的？(它和虚拟机有什么区别)](#How-Do-Containers-Work)
 >- [Docker 和 dotCloud的关系是什么？](#asdf)
 >- [使用Docker的一些好方式](#asdf)
 >- [更多的一些你想知道的内容](#asdf)
@@ -137,5 +137,22 @@ Docker有哪些主要的特性
 Docker最基本的函数有哪些
 ---------
 
+Docker使得建立、修改、发布、搜索、运行容器变得简单方便。下面的这张图表将给你一个来自Docker基础的直观的感受。对于Docker来说，一个容器包含应用和所有的依赖。容器可以被手动的创造，或者如果一个源码仓库如果包含一个DockerFile的话，可以自动创建。随后，这些修改保存到一个基本的Docker镜像被提交到一个新的容器，通过commit方法推送到一个Central Registy。
+在一个Docker Registry(包含公共或者私有),Docker容器能用Docker Search被找到。容器能用pull命令从Registry上被拉下来，能被运行，开始，停止等等操作。使用Docker跑命令，显然，一个在运行的命令行,能是你的服务，公共实例，也可以是他们的组合。
 
+<div style="text-align:center;">
+    <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/docker_functions.jpg?raw=true">
+</div>
+图表8：基本的Docker函数
 
+想拿到更多的函数列表，请访问：[http://docs.docker.io/en/latest/commandline/](#http://docs.docker.io/en/latest/commandline/)
+
+Docker 运行的3种方式：
+>- 在你的Linux主机，作为一个守护进程去管理LXC容器（sudo docker -d）
+>- 使用守护进程的REST接口，在命令行界面运行（sudo run ...）
+>- 作为一个客户端仓库，用来分享你建立的Docker容器（docker pull,cocker commit）
+
+<a name="How-Do-Containers-Work"></a>
+----------
+容器是怎么工作的？(它和虚拟机有什么区别)
+---------
