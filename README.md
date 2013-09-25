@@ -27,9 +27,9 @@ Docker的一般使用在以下几点：
 >- [Docker有哪些主要的特性](#What-Main-Features)
 >- [Docker最基本的函数有哪些](#What-are-the-Basic-Docker-Functions)
 >- [容器是怎么工作的？(它和虚拟机有什么区别)](#How-Do-Containers-Work)
->- [Docker 和 dotCloud的关系是什么？](#asdf)
->- [使用Docker的一些好方式](#asdf)
->- [更多的一些你想知道的内容](#asdf)
+>- [Docker 和 dotCloud的关系是什么？](#What-is-the-Relationship)
+>- [使用Docker的一些好案例](#What-Are-Some-Cool-Use-Cases)
+>- [更多的一些你想知道的内容](#More-things-you-would-like-to-know)
 
 <a name="Background"></a>
 ----------
@@ -177,4 +177,57 @@ Docker 运行的3种方式：
     <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/docker_lightweight.jpg?raw=true">
 </div>
 图表10：使得Docker容器轻量级的原理
+
+这不仅仅使存储或者跑一个容器变得高效，还使得非常方便去更新应用，在下面这张表，你将看到更新Docker容器，你只需要更新和原版本不同的东西。
+
+<div style="text-align:center;">
+    <img width="100%" src="https://github.com/DeanXu/Docker-introduce/blob/master/modifying_updating.jpg?raw=true">
+</div>
+图表11：修改和更新容器
+
+<a name="What-is-the-Relationship"></a>
+----------
+Docker 和 dotCloud的关系是什么？
+---------
+
+Docker是基于dotCloud(流行的PAAS)发布引擎的开源系统。此处省略一些dotCloud的广告（It benefits directly from the experience accumulated over several years of large-scale operation and support of hundreds of thousands of applications and databases. dotCloud is the chief sponsor of the Docker project, and dotCloud CTO is the original architect and current, overall maintainer. While several dotCloud employees work on Docker full-time, Docker is a true community project, with hundreds of
+non-Docker contributors and a complete open design philosophy. All pulls, pushes, forks, bugs, issues, and roadmaps are available for viewing, editing, and commenting on GitHub.）
+
+<a name="What-Are-Some-Cool-Use-Cases"></a>
+----------
+使用Docker的一些好案例
+----------
+对于各种不同的应用案例 Docker是一个很强大的工具。这有很多比较早的比较好的Docker案例，来自于我们社区的成员们。
+
+
+使用案例 | 例子 | 链接
+-------- | ---- | -----
+建立你自己的PAAS | Dokku - 基于mini-Heroku的Docker。你所见过的最小的PAAS实现。 | http://bit.ly/191Tgsx
+基于Web的指令环境 | JiffyLab - 基于Web的指令环境，Python和UNIX shell的轻量级应用 | http://bit.ly/12oaj2K
+简单应用部署(1) | 用Docker部署JAVA应用 = 惊喜 | http://bit.ly/11BCvvu
+简单应用部署(2) | 在Docker上跑Drupal | http://bit.ly/15MJS6B
+简单应用部署(3) | 在Docer上安装Redis | http://bit.ly/16EWOKh
+创建安全的沙盒 | Docker 使创建安全沙盒变得更加简单 | http://bit.ly/13mZGJH
+创造你的SaaS | Memcached服务 | http://bit.ly/11nL8vh
+自动化应用部署 | 通过Docker用 PUSH 按钮部署 | http://bit.ly/1bTKZTo
+连续的整合和部署 | 下一代的持续整合和部署（使用dotCloud的Docker和Strider） | http://bit.ly/ZwTfoy
+轻量级的桌面虚拟化 | Docker桌面：你的桌面通过SSH跑在一个Docker容器内 | http://bit.ly/14RYL6x
+
+
+<a name="More-things-you-would-like-to-know"></a>
+----------
+更多的一些你想知道的内容
+----------
+
+####开始Docker教程
+
+[点击这里开始](http://www.docker.io/gettingstarted/)，包含所有的说明，代码和文档，我们也准备了一个交互式的教程去帮助你入门。 
+
+####Docker的源代码
+
+Docker的源代码托管在Github。[点击这里查看](https://github.com/dotcloud/docker/)
+
+####为Docker社区做贡献
+
+我们的[社区页面](http://www.docker.io/community/)
 
