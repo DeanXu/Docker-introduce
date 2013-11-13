@@ -5,9 +5,9 @@
 关于Docker
 ---------
 
-Docker是一个开源工具，能将一个WEB应用变成一个轻量级的，便携的，独立的容器，跑在几乎任何环境下。
+Docker是一个开源工具，能将一个WEB应用封装在一个轻量级，便携且独立的容器里，然后可以运行在几乎任何服务环境下。
 
-Docker的容器能压缩负载，使应用的表现一致的跑在几乎任何服务器上。一个开发者在笔记本上建立和测试的一个容器，能跑在测试环境，生产环境，虚拟机上，一个什么都没有的服务器，OpenStack集群，公用的电脑等等上面。
+Docker的容器能使应用跑在任何服务器上并且表现一致。一个开发者在笔记本上建立的一个容器，能跑在很多环境下，如：测试环境，生产环境，虚拟机上，VPS，OpenStack集群，公用的电脑等等
 
 Docker的一般使用在以下几点：
 >- 自动化打包和部署应用
@@ -198,6 +198,68 @@ non-Docker contributors and a complete open design philosophy. All pulls, pushes
 使用Docker的一些好案例
 ----------
 对于各种不同的应用案例 Docker是一个很强大的工具。这有很多比较早的比较好的Docker案例，来自于我们社区的成员们。
+
+
+<table>
+<thead><tr>
+<th>使用案例</th>
+<th>例子</th>
+<th>链接</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>建立你自己的PAAS</td>
+<td>Dokku - 基于mini-Heroku的Docker。你所见过的最小的PAAS实现。</td>
+<td><a href="http://bit.ly/191Tgsx">http://bit.ly/191Tgsx</a></td>
+</tr>
+<tr>
+<td>基于Web的指令环境</td>
+<td>JiffyLab - 基于Web的指令环境，Python和UNIX shell的轻量级应用</td>
+<td><a href="http://bit.ly/12oaj2K">http://bit.ly/12oaj2K</a></td>
+</tr>
+<tr>
+<td>简单应用部署(1)</td>
+<td>用Docker部署JAVA应用 = 惊喜</td>
+<td><a href="http://bit.ly/11BCvvu">http://bit.ly/11BCvvu</a></td>
+</tr>
+<tr>
+<td>简单应用部署(2)</td>
+<td>在Docker上跑Drupal</td>
+<td><a href="http://bit.ly/15MJS6B">http://bit.ly/15MJS6B</a></td>
+</tr>
+<tr>
+<td>简单应用部署(3)</td>
+<td>在Docer上安装Redis</td>
+<td><a href="http://bit.ly/16EWOKh">http://bit.ly/16EWOKh</a></td>
+</tr>
+<tr>
+<td>创建安全的沙盒</td>
+<td>Docker 使创建安全沙盒变得更加简单</td>
+<td><a href="http://bit.ly/13mZGJH">http://bit.ly/13mZGJH</a></td>
+</tr>
+<tr>
+<td>创造你的SaaS</td>
+<td>Memcached服务</td>
+<td><a href="http://bit.ly/11nL8vh">http://bit.ly/11nL8vh</a></td>
+</tr>
+<tr>
+<td>自动化应用部署</td>
+<td>通过Docker用 PUSH 按钮部署</td>
+<td><a href="http://bit.ly/1bTKZTo">http://bit.ly/1bTKZTo</a></td>
+</tr>
+<tr>
+<td>连续的整合和部署</td>
+<td>下一代的持续整合和部署（使用dotCloud的Docker和Strider）</td>
+<td><a href="http://bit.ly/ZwTfoy">http://bit.ly/ZwTfoy</a></td>
+</tr>
+<tr>
+<td>轻量级的桌面虚拟化</td>
+<td>Docker桌面：你的桌面通过SSH跑在一个Docker容器内</td>
+<td><a href="http://bit.ly/14RYL6x">http://bit.ly/14RYL6x</a></td>
+</tr>
+</tbody>
+</table>
+
 
 
 使用案例 | 例子 | 链接
