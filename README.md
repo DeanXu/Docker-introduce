@@ -111,14 +111,45 @@ Docker有哪些主要的特性
 
 将Docker和运输的集装箱做主要特性的对比是个很好的方法。（看以下表格）
 
-/         | 物理集装箱 | Docker
---------- | ----- | -----
-无关内容  | 集装箱几乎支持所有类型的货物 | 能压缩任何负载和依赖
-无关硬件  | 标准化的尺寸和交接使得集装箱可以通过货船火车货车运输，用起重机交接不需要换一个容器或者打开集装箱 | 使用操作系统的基本体（像LXC）能一致的跑在几乎任何硬件下，不需要对硬件做额外的修改
-内容隔离和相互作用 | 不需要关心铁锹会砸坏香蕉。集装箱可以一起堆放一起运输 | 资源、网络和内容的独立避免了依赖问题
-自动化 | 标准化使得自动化装载卸货和移动变得方便 | 使用标准的操作指令去跑start/stop/commit/search等等。对运营人员：CI、CD、自动化测试、hybrid clouds
-高效 | 不需要打开不需要改动什么，高效的点对点的方式 | 轻量级，几乎没有启动的消耗，高效的移植性和操控性
-职责分离 | 发货人只需要关心箱子内部的事情，托运人只需要关心箱子外部的东西 | 开发者只需要关心代码层面，运营人员只需要关心服务器的基础环境
+<table>
+<thead><tr>
+<th>/</th>
+<th>物理集装箱</th>
+<th>Docker</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>无关内容</td>
+<td>集装箱几乎支持所有类型的货物</td>
+<td>能压缩任何负载和依赖</td>
+</tr>
+<tr>
+<td>无关硬件</td>
+<td>标准化的尺寸和交接使得集装箱可以通过货船火车货车运输，用起重机交接不需要换一个容器或者打开集装箱</td>
+<td>使用操作系统的基本体（像LXC）能一致的跑在几乎任何硬件下，不需要对硬件做额外的修改</td>
+</tr>
+<tr>
+<td>内容隔离和相互作用</td>
+<td>不需要关心铁锹会砸坏香蕉。集装箱可以一起堆放一起运输</td>
+<td>资源、网络和内容的独立避免了依赖问题</td>
+</tr>
+<tr>
+<td>自动化</td>
+<td>标准化使得自动化装载卸货和移动变得方便</td>
+<td>使用标准的操作指令去跑start/stop/commit/search等等。对运营人员：CI、CD、自动化测试、hybrid clouds</td>
+</tr>
+<tr>
+<td>高效</td>
+<td>不需要打开不需要改动什么，高效的点对点的方式</td>
+<td>轻量级，几乎没有启动的消耗，高效的移植性和操控性</td>
+</tr>
+<tr>
+<td>职责分离</td>
+<td>发货人只需要关心箱子内部的事情，托运人只需要关心箱子外部的东西</td>
+<td>开发者只需要关心代码层面，运营人员只需要关心服务器的基础环境</td>
+</tr>
+</tbody>
+</table>
 
 图表7: 主要的Docker 特性
 
@@ -259,21 +290,6 @@ non-Docker contributors and a complete open design philosophy. All pulls, pushes
 </tr>
 </tbody>
 </table>
-
-
-
-使用案例 | 例子 | 链接
--------- | ---- | -----
-建立你自己的PAAS | Dokku - 基于mini-Heroku的Docker。你所见过的最小的PAAS实现。 | http://bit.ly/191Tgsx
-基于Web的指令环境 | JiffyLab - 基于Web的指令环境，Python和UNIX shell的轻量级应用 | http://bit.ly/12oaj2K
-简单应用部署(1) | 用Docker部署JAVA应用 = 惊喜 | http://bit.ly/11BCvvu
-简单应用部署(2) | 在Docker上跑Drupal | http://bit.ly/15MJS6B
-简单应用部署(3) | 在Docer上安装Redis | http://bit.ly/16EWOKh
-创建安全的沙盒 | Docker 使创建安全沙盒变得更加简单 | http://bit.ly/13mZGJH
-创造你的SaaS | Memcached服务 | http://bit.ly/11nL8vh
-自动化应用部署 | 通过Docker用 PUSH 按钮部署 | http://bit.ly/1bTKZTo
-连续的整合和部署 | 下一代的持续整合和部署（使用dotCloud的Docker和Strider） | http://bit.ly/ZwTfoy
-轻量级的桌面虚拟化 | Docker桌面：你的桌面通过SSH跑在一个Docker容器内 | http://bit.ly/14RYL6x
 
 
 <a name="More-things-you-would-like-to-know"></a>
