@@ -297,12 +297,12 @@ non-Docker contributors and a complete open design philosophy. All pulls, pushes
 更多的一些你想知道的内容
 ----------
 
-####开始Docker教程
+#### 开始Docker教程
 [点击这里开始](http://www.docker.io/gettingstarted/)，包含所有的说明，代码和文档，我们也准备了一个交互式的教程去帮助你入门。 
 
-####Docker的源代码
+#### Docker的源代码
 Docker的源代码托管在Github。[点击这里查看](https://github.com/dotcloud/docker/)
 
-####为Docker社区做贡献
+#### 为Docker社区做贡献
 我们的[社区页面](http://www.docker.io/community/)
 
